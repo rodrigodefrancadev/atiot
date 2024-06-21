@@ -22,7 +22,7 @@ Measurement
 
 - [x] CRETE PROJECT
 - [x] IMPLEMENT ENTITIES
-- [] REPOSITORIES
+- [x] REPOSITORIES
 - [] USE CASES
 - - [] SENSOR
 - - - [] CREATE SENSOR
