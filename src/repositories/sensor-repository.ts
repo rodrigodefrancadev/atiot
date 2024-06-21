@@ -1,4 +1,4 @@
-import { Sensor, SensorProps } from "~/entity/sensor"
+import { Sensor, SensorProps } from "~/entities/sensor"
 
 export interface SensorRepository {
   createSensor(sensorProps: SensorProps): Promise<void>

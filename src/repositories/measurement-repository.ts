@@ -1,4 +1,4 @@
-import { Measurement } from "~/entity/measurement"
+import { Measurement } from "~/entities/measurement"
 
 export interface ListMeasurementsQuery {
   startDate?: Date
