@@ -59,3 +59,21 @@ model VerificationToken {
 
     @@unique([identifier, token])
 }
+
+model Sensor {
+    id Int @id @default(autoincrement())
+    name String
+    lastValue Float?
+    lastValueDatetime DateTime?
+    createdAt DateTime @default(now())
+
+    measurements Measurement[]
+}
+
+model Measurement {
+    id Int @id @default(autoincrement())
+    sensorId Int
+    value Float
+    datetime DateTime @default(now())
+    sensor Sensor @relation(fields: [sensorId], references: [id])
+}
